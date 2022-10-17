@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+ 
+
+<h2>Top 10 Holders </h2>
+
+<table style="width:100%">
+  <tr>
+    <th>volume  </th>
+    <th>floorSale</th>
+    <th>Chain </th>
+    <th>slug</th>
+    <th>rank</th>
+  </tr>
+  
+  {% for item in form %}
+  <tr>  
+    <td>{{item.volume}}</td>  
+      <td>{{item.floorSale}}</td>
+      <td>{{item.chain}}</td>
+      <td>{{item.slug}}</td>
+      <td>{{item.rank}}</td>
+  </tr>
+
+  {% endfor %}
+
+  
+</table>
+
+
+</body>
+</html>
+

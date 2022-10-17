@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+ 
+
+<h2></h2>
+
+<table style="width:100%">
+  <h2> 1day </h2>
+  <tr>
+    <th>volume  </th>
+    <th>chain</th>
+    <!-- <th>onSaleCount </th> -->
+    <th>slug</th>
+    <th>rank</th>
+  </tr>
+  
+  {% for item in form %}
+  <tr>  
+    <td>{{ item.volume.1day }}</td>  
+      <td>{{item.chain}}</td>
+      <!-- <td>{{item.onSaleCount}}</td> -->
+      <td>{{item.slug}}</td>
+      <td>{{item.rank.1day}}</td>
+  </tr>
+
+  {% endfor %} 
+</table>
+
+<table style="width:100%">
+  <h2> 7days </h2>
+  <tr>
+    <th>volume  </th>
+    <th>chain</th>
+    <!-- <th>onSaleCount </th> -->
+    <th>slug</th>
+    <th>rank</th>
+  </tr>
+  
+  {% for item in form %}
+  <tr>  
+    <td>{{ item.volume.7day }}</td>  
+      <td>{{item.chain}}</td>
+      <!-- <td>{{item.onSaleCount}}</td> -->
+      <td>{{item.slug}}</td>
+      <td>{{item.rank.7day}}</td>
+  </tr>
+
+  {% endfor %} 
+</table>
+
+<table style="width:100%">
+  <h2> 30days </h2>
+  <tr>
+    <th>volume  </th>
+    <th>chain</th>
+    <!-- <th>onSaleCount </th> -->
+    <th>slug</th>
+    <th>rank</th>
+  </tr>
+  
+  {% for item in form %}
+  <tr>  
+    <td>{{ item.volume.30day }}</td>  
+      <td>{{item.chain}}</td>
+      <!-- <td>{{item.onSaleCount}}</td> -->
+      <td>{{item.slug}}</td>
+      <td>{{item.rank.30day}}</td>
+  </tr>
+
+  {% endfor %} 
+</table>
+
+<table style="width:100%">
+  <h2> allTime </h2>
+  <tr>
+    <th>volume  </th>
+    <th>chain</th>
+    <!-- <th>onSaleCount </th> -->
+    <th>slug</th>
+    <th>rank</th>
+  </tr>
+  
+  {% for item in form %}
+  <tr>  
+    <td>{{ item.volume.30day }}</td>  
+      <td>{{item.chain}}</td>
+      <!-- <td>{{item.onSaleCount}}</td> -->
+      <td>{{item.slug}}</td>
+      <td>{{item.rank.30day}}</td>
+  </tr>
+
+  {% endfor %} 
+</table>
+</body>
+</html>
+
+
+
+
