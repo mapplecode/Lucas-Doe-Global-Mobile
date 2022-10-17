@@ -17,7 +17,7 @@ def holder(request):
   }
   response = requests.request("GET", url, headers=headers, data=payload)
   data=response.json()
-  # print(data,"+++++++++")
+
   
   res=data.get('historicalStats')[::-1][0:10]
   
@@ -37,17 +37,9 @@ def collections(request):
   response = requests.request("GET", url, headers=headers, data=payload)
   data=response.json()
   resp=data.get('collections').get('results')[::-1][0:10]
-  # a = json.dumps(resp)
-  # load = json.loads(a)
   return render(request,'collection.html',{"form":resp})
 
-# string = {'1day': 0, '7day': 0.03, '30day': 0.05, 'allTime': 280.81946}
-# print(string)
 
-output = Fday = 0,
-SEvenday= 0.03, 
-thirtyday= 0.05, 
-allTime= 280.81946
 
 
 
